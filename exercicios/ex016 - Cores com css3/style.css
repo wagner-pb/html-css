@@ -1,0 +1,34 @@
+@charset "UTF-8"; 
+
+* { /* Configuraçõse globai das CSS*/
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100;
+}
+
+/* as cores vc escolhe em: color.adobe.com*/
+
+body {
+    background-image: linear-gradient(to right, #CFD9DF,#E2EBF0);
+}
+
+main {
+    background-color: white; /* cor de fundo do main, parte branca*/
+    border-radius: 10px; /* arredonda as bordas*/
+    box-shadow: 5px 5px 10px rgba(99, 66, 66, 0.616); /* sombra no main*/
+    width: 600px; /* tamanho do main*/
+    padding: 10px;/* margens internas*/
+    margin: auto; /* centaliza o main*/
+}
+
+h1 {
+    color: #F27A1A; /* cor no h1*/
+    text-align: center; /* centraliza o texto*/
+    text-shadow: 1px 1px 2px #64330a93; /* sombra no texto h1*/
+}
+h2 {
+    color: #E3A0AA ;
+}
+
+p {
+    text-align: justify;
+}

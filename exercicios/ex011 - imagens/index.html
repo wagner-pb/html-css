@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente altere o tamanho do seu navegador</p>
+    <p>
+        <picture><!--Permite aparecer varias fontes de imagem-->
+            <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"><!--ajuda a controlaro tamanho da imagem-->
+            <img src="foto-g.png" alt="Imagem flexivel">
+        </picture>
+    </p>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Reproduzindo áudios em HTML5</p>
+    <audio src="midia/04 - diasdeluta.mp3" controls ></audio>
+    <audio src="midia/01 - envelheconacidade.mp3" controls></audio>
+    <!--controls + autoplay, mostra o controle na página-->
+
+    
+</body>
+</html>

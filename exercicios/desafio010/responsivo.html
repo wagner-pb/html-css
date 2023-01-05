@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 270px;
+            max-width: 800px;/* limitando o comprimento da main*/
+            margin: auto; /* centralizando a imagem*/
+            
+        }
+
+        img {
+            width: 100%;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi debitis accusamus dignissimos ipsam, illum accusantium labore fugiat minima exercitationem facere enim quisquam beatae officiis ullam impedit voluptate minus? Non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptas? Aspernatur, vel suscipit nesciunt ab qui ea? Voluptatibus dolorum inventore, rem itaque non eveniet similique repellat ipsa laboriosam necessitatibus culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente, hic animi ab ratione consequatur facilis explicabo soluta? Quas delectus blanditiis ipsam sed ducimus porro perspiciatis, voluptatem corporis deserunt ea.</p>
+        
+        <picture>
+            <!-- chama uma imagem menor conforme lrgura determinada-->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+      
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus atque ad repellendus, alias nisi molestias quidem in aliquid aspernatur totam fugiat non quaerat sapiente quis similique deleniti, quo veniam?</p>
+        <!-- adicionar a extensao windows resizer ao crome(crome web store)-->
+    </main>
+    
+    
+</body>
+</html>

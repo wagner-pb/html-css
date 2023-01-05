@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkst</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseud-class
+        :: = pseudo-elemento
+        > = children*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a { 
+            color: red;/* vermelho em todos os links*/
+            text-decoration: none;/* tira o sublinhado de todos*/
+            font-weight: bold; 
+            
+        }
+
+        a:hover { /* qdo passar o mouse por cima*/
+            color: black; 
+            text-decoration: underline;
+        }
+
+        a:active { /* Pseudo-calss*/
+            color: blue;
+
+        }
+
+        a::after { /* Pseud-elemento*/
+            content:   '  [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(185, 143, 79);
+
+        }
+        
+        a::before {
+            color: black;
+            content: '☛';
+        }
+        .especial::after {
+            content:'✓' ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Personalizando Links</h1>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li> <!--O taget ="_blank", abre as duas abas na mesma pagina-->
+    <li><a href="https://youtube.com/cursoemvideo" class="especial">Canal do YouTube</a></li>
+    <li> <a href="https://www.cursoemvideo.com" >Site do Curso em Video</a> </li> 
+
+    
+</body>
+</html>

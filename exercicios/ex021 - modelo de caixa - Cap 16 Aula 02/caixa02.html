@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!-- Cabeça-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags - Cap 16 Aula 04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray
+        }
+
+        header {
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        nav { /* menu de navegação*/
+            background-color: darkgray;
+            width:980px;
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349); /*deslocamento horizontal, deslocamento vertical, espalhamento e cor */
+        }
+
+        nav > a{ /* a filho de nav(que esta dentro)*/
+            background-color: none;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover {
+           text-decoration: brown;
+        }
+
+
+        main {
+            background-color: white;
+            padding: 10; /* todos os lados tem a mesma distancia entre (margens)*/
+            margin: 10px;
+            border-radius: 15px;
+          
+        }
+        footer {
+            
+            background-color: black;
+            color: aliceblue;
+            margin: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%; /* Transforma um quadrado em uma bola*/
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Codigo principal-->
+       
+        <section id="assuntos">
+            <p>Esportes Politicas e Tecnologias</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur, perspiciatis, voluptatibus quod aspernatur vitae, cum quidem aliquam iste amet mollitia voluptatum ab consectetur voluptate doloremque asperiores molestiae quos voluptatem?</p>
+                <aside> <!-- sobre algo externo ao artigo -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+           
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>Desenvolvido por Curso em Vídeo</footer>
+    <div id="bola"> 
+
+    </div>
+    
+</body>
+</html>
