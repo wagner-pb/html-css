@@ -8,18 +8,27 @@
     <style>
         body {
             height: 100vh; /* mantem a altura e a largura em 100%*/
-            background-color: black;
+           /* background-color: black;
             background-image: url(Imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* cobre toda a tela */
+            background-size: cover; /* cobre toda a tela 
+            background-attachment: fixed; /* fixa a imagem na tela*/
+
+            /* Shorthand - bacground
+            color > image > position > repeat > [size] > attachment  --- o size ñ esta funcionando*/
+            
+
+            background: black url(Imagens/wallpaper002.jpg) center center no-repeat  fixed;  
+            background-size: cover;
+
 
 
         }
 
         main {
             background-color: antiquewhite;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +38,7 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt similique quo consequuntur expedita unde commodi suscipit aliquid ab? Possimus ullam maiores quibusdam optio officia quasi atque quam unde ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eligendi illum. Quae error culpa itaque tenetur optio ducimus delectus illo architecto vitae corrupti. Aliquam neque impedit, veritatis accusamus ducimus vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolor ipsa provident reiciendis vitae impedit vel earum ipsam? Ipsam rerum quas consequuntur perspiciatis fugit optio, quia iste minima est harum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt similique quo consequuntur expedita unde commodi suscipit aliquid ab? Possimus ullam maiores quibusdam optio officia quasi atque quam unde ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eligendi illum. Quae error culpa itaque tenetur optio ducimus delectus illo architecto vitae corrupti. Aliquam neque impedit, veritatis accusamus ducimus vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolor ipsa provident reiciendis vitae impedit vel earum ipsam? Ipsam rerum quas consequuntur perspiciatis fugit optio, quia iste minima est harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo, nisi maxime animi iusto sequi molestiae nesciunt tempore blanditiis quos quidem doloremque distinctio consequatur quas unde placeat minus quibusdam ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam impedit nesciunt veritatis accusamus in laudantium perspiciatis quia esse. Tempora quidem necessitatibus commodi ab molestias porro optio beatae aut odio repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus error minima porro dolores, doloremque et minus, officia corporis repellat repudiandae veniam, in sit ducimus blanditiis reprehenderit dignissimos inventore! Ducimus, unde?</p>
     </main>
     
 </body>
