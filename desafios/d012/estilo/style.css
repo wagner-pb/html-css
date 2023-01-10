@@ -1,25 +1,44 @@
 @charset "UTF 8";
 
+/* google font..> escplhe o estilo .. seleciona o estilo...no lado direito superior clica no simbolo window+ e copia o estilo*/ 
+
+@import url('https://fonts.googleapis.com/css2? family= Fira+Code & family= Passion+One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Fira+Code & family= Passion+One & family= Sriracha & display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Sriracha', cursiva;
+}
+
 * { /* o(*) caracteristicas de todos os elementos da aplicação*/
     margin: 0px;
     padding: 0px;
+    
+
 
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: aliceblue;
     text-align: center;
+   
 }
 
 head h1 {
     padding: 50px;
     font-variant: small-caps; /* deixa as primeiras letras maiores*/
+    font-family: var(--fonte2);
+    font-size:2vw;
 }
 
 header > p {
@@ -42,6 +61,8 @@ section {
    padding-bottom: 10vh;
    line-height: 2em; /* espaçamento entre linhas*/
    padding-left: 30px;
+   font-family: var(--fonte3);
+   font-size: 3vw;
 }
 
 section.normal {
@@ -55,7 +76,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+   display: inline-block;
+   padding: 5px;
     background-color: rgb(34, 33, 33);
 }
 
