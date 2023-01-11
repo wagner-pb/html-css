@@ -40,23 +40,24 @@
     <table>
         <tr> <!-- 1ªlinha da tabela-->
             <td>A1</td> <!--dados da tabela-->
-            <td>B1</td>
+            <td colspan="2">B1</td>
             <td>C1</td>
         </tr>
         <tr class="linha">
             <td>A2</td>
             <td>B2</td>
-            <td class="numero" >c2</td>
+            <td class="numero" colspan="2" rowspan="2">c2</td> <!-- c2 esta ocupando 2 colunas-->
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td rowspan="2">C3</td>
         </tr>
         <tr>
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td >C4</td>
+
         </tr>
 
     </table>
