@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: separate;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        tr.destaque {
+            background-color: blueviolet;
+        }
+        .destaque1 {
+            background-color: brown;
+        }
+        col.cnome { /* destacando uma coluna*/
+            background-color: chocolate;
+        }
+        .csexo {
+            background-color: rgb(212, 65, 65);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="ccidade">
+            <col class="cprof">
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Nome</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <Td>25</Td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td >Claudio</td>
+            <td>M</td>
+            <Td>28</Td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <Td>42</Td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td class="destaque1">Hélio</td>
+            <td>M</td>
+            <Td>19</Td>
+            <td>Vendedor</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
