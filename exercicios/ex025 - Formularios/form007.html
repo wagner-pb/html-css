@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários com select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+
+            <select name="estado" id="iest"> <!--selecionar um estado-->
+
+            <option value="" selected>---Escolha----</option><!--Cabeçalho-->
+
+            <optgroup label="Região Norte">
+                <option value="AC">Acre</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapa</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rodônia</option>
+                <option value="RR">Roraima</option>
+                <option value="TO">Tocantins</option> 
+            </optgroup>
+
+            <optgroup label="Região Sudeste"><!--Agrupa (no caso) por regiao-->
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            </select>
+        </p>
+
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof"><!-- list = "lstprof" (lista aparecer na caixa em conjunto com id="lstprof")-->
+        <datalist id="lstprof"><!--id="lstprof" é para fazer com q a lista apareça na cixa -->
+            <option >Administrador</option>
+            <option value="Cont">Contador</option>
+            <option value="DEV">Desenvolvedor</option>
+            
+        </datalist>
+
+        <p> <!--coloca uma area de text no form com 60 colunas e 10 linhas / o numero de linhas é infinito-->
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="60" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="LImpar">
+        </p>
+        
+    </form>
+
+    
+</body>
+</html>
