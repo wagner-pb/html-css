@@ -1,0 +1,76 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color:rgb(162, 161, 161);
+}
+header {
+    background-color: rgb(159, 157, 157);
+}
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* muda o layout do cursor*/
+}
+
+span#burguer:hover { /* muda a cor */
+    background-color: aliceblue;
+    color: black;
+
+}
+
+menu  {
+    display: none;
+}
+
+menu ul {
+    list-style-type:none; /* altera o visual do menu*/
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;
+    color: aliceblue;
+    border: 2px solid rgb(82, 81, 81);
+
+}
+
+menu > ul > li > a:hover { /* altera a cor qdo o mouse passar sobre*/
+    background-color: rgb(153, 149, 149);
+
+}
+
+main {
+    width: 90vw;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
