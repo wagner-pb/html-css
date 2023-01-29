@@ -9,8 +9,10 @@
      <link  href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Amenu%3A" rel="stylesheet"> <!--google fontes icon-->
 
    <link rel="stylesheet" href="estilos/style.css">
+
+   <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <span  id="burguer" class="material-icons-outlined" onclick="clickMenu()">
@@ -46,8 +48,18 @@
                 itens.style.display = 'block'
             } 
             /*o   volt a aparecer*/
-        }
-        
+        }       
+    </script>
+
+    <script>/* controla o menu conforme o tamanho da tela*/
+function mudouTamanho() {
+    if (window.innerWidth >= 768) {
+        itens.style.display ="block"
+    }else {
+        itens.style.display = "none"
+    }
+}
+
     </script>
     
 </body>
